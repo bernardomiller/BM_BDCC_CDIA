@@ -76,6 +76,17 @@ A API fica disponível em `/api/alunos/` e `/api/avaliacoes/` (ModelViewSets pad
 
 O projeto já inclui `.ebextensions/` e `.elasticbeanstalk/config.yml` configurados para o deploy via `eb deploy`, seguindo o template fornecido pelo professor para a disciplina.
 
+### 🔗 URL da API publicada
+
+**http://Apollo-avaliacoes-env.eba-rgexpjzp.us-east-2.elasticbeanstalk.com**
+
+| Endpoint | Descrição |
+|---|---|
+| `/` | Health check — `{"status": "ok"}` |
+| `/admin/` | Django Admin (user: `admin`) |
+| `/api/alunos/` | CRUD de alunos (DRF) |
+| `/api/avaliacoes/` | CRUD de avaliações (DRF) |
+
 ## Próximos passos (fora do escopo atual)
 
 - Adaptar o modelo para incluir autenticação/login de aluno.
